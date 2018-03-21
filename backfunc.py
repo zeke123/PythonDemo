@@ -9,6 +9,7 @@ def lazy_sum(*args):
         return ax
     return sum
 
+
 #当我们调用lazy_sum()时，返回的并不是求和结果，而是求和函数：
 
 f = lazy_sum(1, 3, 5, 7, 9)
