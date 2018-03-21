@@ -292,10 +292,25 @@ print('------------------4.3')
 
 
 #__getattr__
+
+#正常情况下，当我们调用类的方法或属性时，如果不存在，就会报错
+
+
 #动态返回一个属性
 
+class Student(object):
 
+    def __init__(self):
+        self.name = 'zhoujian'
 
+    def __getattr__(self, attr):
+        if attr == 'score':
+            return 100
+
+s = Student()
+print(s.name)
+print(s.score)
+print('------------------4.4')
 
 
 
