@@ -17,7 +17,6 @@ print(isinstance(100, Iterable))
 
 print('-----------------------1')
 
-
 isinstance((x for x in range(10)), Iterator)
 print(isinstance((x for x in range(10)), Iterator))
 

@@ -15,7 +15,6 @@ print(a)
 print(b)
 print(c)
 
-
 print('--------------------------')
 
 #student的集合students

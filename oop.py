@@ -232,7 +232,6 @@ print(type(None))
 
 print(type(abs))
 
-
 print('--------------------------9')
 
 #type()函数返回的是什么类型呢？它返回对应的Class类型。如果我们要在if语句中判断

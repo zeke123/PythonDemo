@@ -4,7 +4,6 @@ from fuc import my_abs
 my_abs(9)
 print(my_abs(9))
 
-
 a = 20
 if a >= 18:
     print('你是个成年人，年龄是',a)
