@@ -327,29 +327,19 @@ class Student(object):
 s = Student('周建')
 s()
 
+print('------------------4.5')
+
+#通过callable()函数，我们就可以判断一个对象是否是“可调用”对象。
 
 
+callable(s)
+print(callable(s))
 
+print(callable(max))
 
+callable([1, 2, 3])
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(callable([1, 2, 3]))
 
 
 
