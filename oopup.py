@@ -1,5 +1,7 @@
 from types import MethodType
 
+from enum import Enum
+
 #面向对象高级编程
 
 #(1)使用 __slots__
@@ -342,16 +344,28 @@ callable([1, 2, 3])
 print(callable([1, 2, 3]))
 
 
-
-
-
-
 #(5) 使用枚举类
 print('----------------------5')
 
+#Python提供了Enum类来实现枚举
+
+from enum import Enum,unique
+
+@unique
+class Weekday(Enum):
+    Sun = 0
+    Mon = 1
+    Tue = 2
+    Wed = 3
+    Thu = 4
+    Fri = 5
+    Sat = 6
 
 
+#@unique装饰器可以帮助我们检查保证没有重复值。
 
+day1 = Weekday.Mon
+print(day1)
+print(Weekday.Tue)
+print(Weekday.Tue.value)
 
-#(6)使用元类
-print('----------------------6')
