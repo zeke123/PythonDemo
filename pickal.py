@@ -12,7 +12,6 @@ try:
 except ImportError:
     import pickle
 
-
 #把一个对象序列化并写入文件：
 d = dict(name='zhoujian', age=20, score=90)
 #pickle.dumps()方法把任意对象序列化成一个str,写进去
